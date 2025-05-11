@@ -9,4 +9,8 @@ open new terminal
 
 conda activate py39
 
-pip install ddsp
+pip install ddsp fastapi[all] pyrebase4 pyngrok tensorflow-probability[tf]
+
+pip install tf-keras-nightly
+
+pip install "protobuf<4,>=3.20.0"
