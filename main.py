@@ -32,10 +32,14 @@ app.add_middleware(
 
 # Firebase configuration
 firebase_config = {
-    "apiKey": "AIzaSyAcbBkzH2YnTPVyDhKGjeA7EFAQf3wNTeE",
-    "authDomain": "ainstrument-a03f0.firebaseapp.com",
-    "databaseURL": "https://ainstrument-a03f0-default-rtdb.firebaseio.com",
-    "storageBucket": "ainstrument-a03f0.appspot.com",
+    "apiKey": "AIzaSyConvMI2zzc6vxUXS8M72aq3voG0Xk5ZvY",
+    "authDomain": "aiinstuments.firebaseapp.com",
+    "databaseURL": "https://aiinstuments-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "projectId": "aiinstuments",
+    "storageBucket": "aiinstuments.firebasestorage.app",
+    "messagingSenderId": "555681845735",
+    "appId": "1:555681845735:web:43da51cf8d6a927c3eed42",
+    "measurementId": "G-BXGWWWF2ZQ"
 }
 
 # Initialize Firebase
