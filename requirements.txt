@@ -1,0 +1,5 @@
+fastapi[all]
+pyrebase4
+pyngrok
+ddsp
+tensorflow-probability==0.15.0

@@ -11,9 +11,10 @@ from fastapi import FastAPI, File, Form, Header, HTTPException, UploadFile, Resp
 from fastapi.middleware.cors import CORSMiddleware
 import pyrebase
 import requests
+from pyngrok import ngrok
 
-from vocal_extraction import VocalExtraction
 from music_conversion import MusicConversion
+from vocal_extraction import VocalExtraction
 
 # Initialize FastAPI app
 app = FastAPI(title="AInstrument API", 
@@ -256,4 +257,7 @@ def save_to_user_profile(user_uid, song_name, extracted_url, uploaded_url, instr
 
 if __name__ == "__main__":
     import uvicorn
+    # Open a HTTP tunnel on port 8000 (default for FastAPI)
+    public_url = ngrok.connect(8000)
+    print(f"FastAPI is accessible publicly at {public_url}")
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
